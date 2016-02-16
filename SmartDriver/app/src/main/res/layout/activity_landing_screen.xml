@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dashboard_bg_color"
+    tools:context="com.volvo.telematics.views.LandingScreenActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top_header_bg_color"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reg No."
+            android:textSize="23sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="KA-01-MR-7829"
+            android:textSize="23sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/map_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5" />
+
+            <LinearLayout
+                android:id="@+id/layout_btn_journey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_start_journey"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:text="Start Journey"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_stop_journey"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:text="Stop Journey"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_health_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/image_heart_beat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/heart_beat" />
+
+                <TextView
+                    android:id="@+id/hearttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="0.0"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/hearttext1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    android:text="Timestamp"
+                    android:textSize="10sp" />
+
+
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.50"
+                    android:src="@mipmap/bandd"
+                    android:text="Temperature 37 &#x2103;"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/btn_layout_signout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/label_welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btn_signout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:onClick="doSignIn"
+                    android:text="Sign Out"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_layout_signin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:baselineAligned="false"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btn_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_weight="1"
+                    android:text="Sign In"
+                    android:textAllCaps="false" />
+
+                <!--<com.google.android.gms.common.SignInButton
+                    android:id="@+id/btn_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_weight="1">
+
+                </com.google.android.gms.common.SignInButton>-->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

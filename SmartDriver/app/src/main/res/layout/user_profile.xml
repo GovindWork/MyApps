@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/top_header_bg_color"
+        android:padding="7dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Basic Information"
+            android:textColor="@android:color/white"
+            android:textSize="23sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textStyle="italic"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/editTextDialogUserInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textStyle="italic"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/editTextDialogUserInput2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOB:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editTextDOB"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:editable="false"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textColor="@android:color/white"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblUserHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Height"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextHeightFeet"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@android:color/white"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ft"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/editTextHeightInches"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@android:color/white"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblUserWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your weight"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextWeight"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@android:color/white"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kg"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="We strive to ensure the security, integrity and privacy of personal information submitted to us."
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

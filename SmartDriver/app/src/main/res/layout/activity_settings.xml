@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dashboard_bg_color"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="drive.solution.com.drivecoach.views.SettingsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Heart rate update interval"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SeekBar
+            android:id="@+id/heart_rate_interval"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:max="20" />
+
+
+        <TextView
+            android:id="@+id/text_heart_interval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/heart_rate_interval"
+            android:layout_weight="1"
+            android:text="20 mins"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Location update interval"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <SeekBar
+            android:id="@+id/location_update_interval"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:max="20" />
+
+
+        <TextView
+            android:id="@+id/text_location_interval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/location_update_interval"
+            android:layout_weight="1"
+            android:text="20 mins"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:onClick="doRevokeAccess"
+            android:text="Revoke Access Token" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="bottom"
+            android:onClick="doEndJourney"
+            android:text="END JOURNEY"/>
+    </LinearLayout>
+
+</LinearLayout>

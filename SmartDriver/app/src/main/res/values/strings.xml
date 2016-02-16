@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Smart Driver</string>
+    <string name="sign_out_button_name">Sign out</string>
+    <string name="revoke_access_button_name">Revoke</string>
+    <string name="status_signed_out">Signed out</string>
+    <string-array name="users">
+        <item> 1032185 </item>
+        <item> 1032186 </item>
+        <item> 1032187 </item>
+        <item> 1032188 </item>
+    </string-array>
+
+
+</resources>
